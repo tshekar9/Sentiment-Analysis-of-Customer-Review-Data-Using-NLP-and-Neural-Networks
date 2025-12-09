@@ -65,27 +65,32 @@ The last layer is the output layer with only one node. It has a sigmoid activati
 In this way, the neural network can take sequenced customer review data and categorise it as positive or negative.
 
 ### Model Architecture
-Activation Functions:
+
+#### Activation Functions:
 Activation functions transform the output from one layer to another.
 ReLU (Rectified Linear Unit) was selected as the activation function for the hidden layers because
 it is computationally efficient and avoids the vanishing gradient problem.
 The sigmoid activation function was selected for the output layer. It was selected because it
 provides an output value between 0 and 1 which works well with binary classification problems
 where the output is interpreted as a probability.
-Number of Nodes Per Layer:
+
+#### Number of Nodes Per Layer:
 The number of nodes for the hidden layers was chosen arbitrarily based on the size of the available
 training data and the nature of the classification problem. The first hidden layer has 100 nodes and
 the second hdden layer has 50 nodes.
 The output layer has only one node since this is a binary classification problem requiring an output
 of either 0 or 1.
-Loss Function:
+
+#### Loss Function:
 The loss function used in the model is binary cross entropy since this is a classification analysis
 with binary categories of 0 and 1.
-Optimizer:
+
+#### Optimizer:
 The optimizer used for this analysis is "adam" since it is easy to implement, computationally
 efficient and combines the best aspects of other optimziers. It iteratively adjusts weights and adapts
 the learning rate thus effectively reducing overfitting.
-Stopping Criteria:
+
+#### Stopping Criteria:
 Early stopping criteria was used to prevent the model from overfitting and improving the
 generalization of the final model. The stopping criteria used for this analysis was the
 EarlyStopping() method from tensorflow.keras.callbacks with patience=2. This means that model
