@@ -105,8 +105,10 @@ worsening results.
 
 Accuracy is the number of correct predictions divided by the total number of predicitons, expressed
 as a percentage. A higher predictive accuracy indicates a better model. For this model:
+
 Training Accuracy: **93.58%**
 Test Accuracy: **80.67%**
+
 The testing accuracy is high indicating a good model. Also, the difference between the two
 accuracies is less than 15%. This shows that the model is good as per indutry standards since the
 difference between training and testing accuracies should be between 5%-15%.
